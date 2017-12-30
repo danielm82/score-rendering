@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Score Rendering</title>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="vexflow-min-ex.js"></script>
+<script src="main.js"></script>
+<style>
+    #cursor-container {
+        position: absolute;
+        top: 45px;
+        left: 80px;
+        width: 483px;
+        height: 673px;
+    }
+
+    #music-cursor {
+        position:absolute;
+        left:0;
+        top:0;
+        height:40px;
+        width:2px;
+        background-color:black;
+    }
+
+    #canvas-container {
+        width:560px;
+        height:1000px;
+        position:relative;
+    }
+</style>
+</head>
+<body>
+    <button id="play-audio">play</button>
+    <button id="record">start recording</button>
+    <div id="recording-container"></div>
+
+    <audio id="vocals" src="lasisido_vocal.wav"></audio>
+    <audio id="user-audio"></audio>
+
+    <div id="canvas-container">
+        <canvas width="560" height="1000" id="vf-renderer"></canvas>
+        <div id="cursor-container" width="483" height="673">
+           <div id="music-cursor"></div>
+        </div>
+    </div>
+
+ 
+
+</body>
+</html>
