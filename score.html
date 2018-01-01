@@ -32,14 +32,16 @@
 </style>
 </head>
 <body>
-    <button id="play-audio">play</button>
-    <button id="record">start recording</button>
+    <button id="display-score">Display Score</button>
+    <button id="play-audio" style="display:none;">play</button>
+    <button id="record" style="display:none;">start recording</button>
     <div id="recording-container"></div>
 
     <audio id="vocals" src="lasisido_vocal.wav"></audio>
+    <audio id="organ" src="lasisido_organ.wav"></audio>
     <audio id="user-audio"></audio>
 
-    <div id="canvas-container">
+    <div id="canvas-container" style="display:none;">
         <canvas width="560" height="1000" id="vf-renderer"></canvas>
         <div id="cursor-container" width="483" height="673">
            <div id="music-cursor"></div>
